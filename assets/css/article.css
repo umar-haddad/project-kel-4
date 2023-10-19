@@ -1,0 +1,16 @@
+.card-img-article {
+  height: 200px;
+  object-fit: cover;
+}
+
+.article-gray-text {
+  font-size: 14px;
+  color: #595959;
+}
+
+.text-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
