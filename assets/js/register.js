@@ -22,10 +22,12 @@ form.addEventListener('submit', function (e) {
 
 function validateEmail(email) {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    alert('Email tidak valid')
     return emailPattern.test(email);
 }
 
 function validatePassword(password) {
+    alert('Password harus memiliki minimal 6 karakter')
     return password.length >= 6;
 }
 
