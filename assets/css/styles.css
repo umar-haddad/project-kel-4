@@ -9,7 +9,7 @@ body {
 }
 
 .section-padding {
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 .carousel-item {
@@ -66,9 +66,6 @@ body {
 	}
 	.card {
 		margin-bottom: 30px;
-	}
-	.img-area img {
-		width: 100%;
 	}
 }
 
