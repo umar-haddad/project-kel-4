@@ -15,17 +15,19 @@ form.addEventListener('submit', function (e) {
     if (validateEmail(email) && validatePassword(password)) {
         // Data formulir valid, Anda dapat mengirimnya ke server di sini
         sendDataToServer(email, password, firstName, lastName);
-    } else {
-        alert('Email atau password tidak valid.');
     }
 });
 
 function validateEmail(email) {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    alert('Email tidak valid.')
     return emailPattern.test(email);
 }
 
 function validatePassword(password) {
+    if (password.length < 6) {
+        alert('Password minimal 6 karakter.');
+    }
     return password.length >= 6;
 }
 
