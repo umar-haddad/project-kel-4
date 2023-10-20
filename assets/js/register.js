@@ -20,7 +20,9 @@ form.addEventListener('submit', function (e) {
 
 function validateEmail(email) {
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    alert('Email tidak valid.')
+    if(!emailPattern.test(email)){
+        alert('Email tidak valid.');
+    }
     return emailPattern.test(email);
 }
 
