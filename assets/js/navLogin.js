@@ -14,7 +14,7 @@ const renderNavbarUser = () => {
       navLinkButton.classList.add("hidden");
       navLinkButton2.classList.add("hidden");
       navLinkUser.classList.remove("hidden");
-      navLinkName.innerHTML = user.firstName;
+      navLinkName.innerHTML = `Hi, ${user.firstName.toUpperCase()}`;
    }else {
       navLinkButton.classList.remove("hidden");
       navLinkButton2.classList.remove("hidden");
