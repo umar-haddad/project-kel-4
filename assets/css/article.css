@@ -14,3 +14,16 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.margin-top-100 {
+  margin-top: 100px;
+}
+
+.list-article {
+  min-height: 80vh;
+  margin-bottom: 50px;
+}
