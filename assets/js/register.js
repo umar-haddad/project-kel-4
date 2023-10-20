@@ -26,7 +26,7 @@ function validateEmail(email) {
 }
 
 function validatePassword(password) {
-    return password.length >= 12;
+    return password.length >= 6;
 }
 
 function sendDataToServer(email, password, firstName, lastName) {
@@ -43,10 +43,11 @@ function sendDataToServer(email, password, firstName, lastName) {
     .then(data => {
         // Simpan status registrasi ke local storage
         saveRegistrationStatus(email);
-
+        console.log(data)
         // Lakukan sesuatu dengan respons dari server jika diperlukan
-        console.log(data);
         alert('Registrasi berhasil.');
+        window.location.href = 'login.html';
+
     })
     .catch(error => {
         console.error(error);
